@@ -22,8 +22,9 @@ export class LoginComponent implements OnInit {
     if(this.loginService.validar(this.email,this.password)){
      this.auth_view = true; 
     this.router.navigate(['Home']);
-    
+    alert('Se a comprobado las credenciales');
     }else{
+      confirm("Error en Credenciales");
       this.auth_view = false; 
     }
   }
