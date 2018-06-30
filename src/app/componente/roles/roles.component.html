@@ -1,0 +1,19 @@
+
+<h3>Listado de Roles</h3>
+<table class="table table-bordered table-striped tabla"
+ style="margin-top: 40px;">
+ <thead>
+ <tr class="filters">
+ <th>ID</th>
+ <th>Nickname</th>
+ <th>Telefono</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr *ngFor="let rol of roles">
+ <td>{{ rol.id }}</td>
+ <td>{{ rol.nickname }}</td>
+ <td>{{ rol.rol }}</td>
+ </tr>
+ </tbody>
+ </table>
